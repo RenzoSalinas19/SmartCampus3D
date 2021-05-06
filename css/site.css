@@ -1,0 +1,257 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+   
+
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 600px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #00aae4;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #00aae4;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+
+:root {
+  --dark: #14171d;
+  --dark-x: #1d2027;
+}
+
+html, body {
+  height: 100%;
+  background-color: white;
+  color: #FFFFFF;
+}
+
+.bg-dark { background-color: var(--dark) !important; }
+
+.navbar {
+  min-height: 5rem;
+}
+
+#hero-container {
+  height: 600px;
+}
+
+#hero-background {
+  position: absolute;
+  width: 0;
+  height: 600px;
+  transition: 1s ease-in-out;
+}
+
+#hero-img {
+  width: 100%;
+  max-width: 450px;
+  opacity: 0;
+  z-index: 1000;
+  transition: 2s ease-in-out;
+  position: absolute;bottom: 10%;
+}
+
+.imgP{
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.a1{
+  text-align: center;
+  display: inline-block;
+  font-size: x-large;
+}
+
+.a2{
+  text-align: center;
+  display: inline-block;
+  font-size: x-large;
+  width: 100%;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  min-height: 600px;
+  align-items: center;
+}
+
+#lines {
+  opacity: 0;
+  z-index: 999;
+  transition: 1s ease-in-out;
+}
+
+.spin {
+  width: 100%;
+  max-width: 450px;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+
+#hero-text {
+  opacity: 0;
+  transition: 2s ease-in-out;
+}
+
+.btn {
+  padding: .75rem 2rem;
+}
+
+
+@media (max-width: 1024px) {
+ .display-1 {
+     font-size: 3rem;
+ }
+}
+
+@media (max-width: 768px) {
+  #hero-content {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      text-align: center;
+  }
+  #hero-container {
+      height: unset;
+  }
+  #hero-background {
+      height: 100%;
+  }
+}
+
+@media (max-width: 575.98px) { 
+  .btn {
+      width: 100%;
+  }
+  .spin {
+      max-width: 260px;
+  }
+
+ 
+}
